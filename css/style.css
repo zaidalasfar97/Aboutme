@@ -1,0 +1,28 @@
+td, th{
+    border: 2px solid black;
+  
+  }
+  
+  table{
+    border-collapse: collapse;
+  }
+  hw {
+    font-size: 400%;
+    color: rgb(6, 26, 42);
+}
+
+body {
+    background-color: rgb(166, 181, 223);
+}
+li {
+    color: rgb(49, 49, 92);
+    margin: 2px;
+    font-size: large;
+}
+.space {
+    height: 100px;
+    width: 500px;
+}
+h2 {
+    font-size: 150%
+}
