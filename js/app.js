@@ -1,27 +1,38 @@
 'use strict';
 
 // Lab 02
+var sco =0
 
 var username = prompt('Welcome here , What is your name ');
 alert('Welcome her ' + username)
 
 
+function Age(myAge){
+  if (myAge.toLowerCase() === 'yes' || myAge.toUpperCase() === 'yes' || myAge.toLowerCase() === 'y' || myAge.toUpperCase() === 'y') {
+    alert('You are over 18 years old ');
+    sco++
+  } else {
+    alert('You are under 18 years old ');
+  }
+
+}  
 
 var Uage = prompt('Are you over 18 years old ');
+Age(Uage);
 
-if (Uage.toLowerCase() === 'yes' || Uage.toUpperCase() === 'yes' || Uage.toLowerCase() === 'y' || Uage.toUpperCase() === 'y') {
-  alert('You are over 18 years old ');
-} else {
-  alert('You are under 18 years old ');
-}
+
 // console.log(Uage);
+
 
 var Uscholl = prompt('Are you studing in shcool?');
 
 if (Uscholl.toLowerCase() === 'yes' || Uscholl.toUpperCase() === 'yes' || Uscholl.toLowerCase() === 'y' || Uscholl.toUpperCase() === 'y') {
   alert('You are in school');
+
 } else {
   alert('You are not in  school');
+  sco++
+
 
 }
 
@@ -34,6 +45,8 @@ if (Uscholl.toLowerCase() === 'yes' || Uscholl.toUpperCase() === 'yes' || Uschol
   alert('You are in University');
 } else {
   alert('You are not in  Unviersity');
+  sco++
+
 
 }
 
@@ -45,6 +58,8 @@ var animals = prompt('Do you love dog?');
 if (animals.toLowerCase() === 'yes' || animals.toUpperCase() === 'yes' || animals.toLowerCase() === 'y' || animals.toUpperCase() === 'y') {
   alert('Wow , you love dogs ');
 } else {
+  sco++
+
   alert('Ohh , you arent love dogs ');
 
 }
@@ -56,6 +71,8 @@ var cats = prompt('Do you love cats ?');
 
 if (cats.toLowerCase() === 'yes' || cats.toUpperCase() === 'yes' || cats.toLowerCase() === 'y' || cats.toUpperCase() === 'y') {
   alert('Wow , you love cats ');
+  sco++
+
 } else {
   alert('Ohh , you arent love cats');
 
@@ -87,38 +104,35 @@ for (var i = 0; i < 4; i++) {
   } else {
     alert('This answer is correct');
     i = i + 5
+    sco++
+
   }
 
 }
 
-// this wan have uncorrect code 
+var multinum = ['z', 'a', 'i', 'd'];
+var userinput ;
+var x = 0 ;
+var correctAnswer=false;
 
+while( x<6 && !correctAnswer){
+  userinput = prompt('Please guess my name')
+  for(var j=0 ; j<multinum.length; j++){
+    if (multinum[j]===userinput.toLowerCase()){
+      alert('correct answer');
+      correctAnswer=true;
+      j=j+multinum
+      sco++;
 
-// var score = 0
-// var multinum = [1, 2, 3, 4];
-// var userinput = prompt('Please guess the number')
+      
+    }else {
+      alert('This unanswer uncorrect')
+    }
+  }
+  
+}
 
-// for (var x = 0; x < 6; x++) {
-//   while (userinput === '' || userinput === null || userinput === undefined) {
-//     userinput = prompt('Please guess the number');
-    
-
-//   }
-
-//   for (var i = 0; i <= multinum.length; i++) {
-//     if (parseInt(userinput) === multinum[i]) {
-//       break
-
-//       alert('This number is correct');
-//       score++;
-
-//     } else {
-//       alert('This number is uncorrect');
-//     }
-
-
-// }
-
+ alert('You score  is ' + sco);
 
 
 
