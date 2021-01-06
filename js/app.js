@@ -1,6 +1,6 @@
 'use strict'
 
-
+var score = 0;
 
 alert('Welcome to my page, This is some questions for you :)')
 
@@ -8,73 +8,68 @@ var username = prompt("Let's stast with what's' your name?")
 alert("Hello " + username + " Nice to meet you");
 
 
-var favColor = 'black';
-function questionOne() {
-    var color = prompt('Can you guess my favorite color?:P').toLocaleLowerCase();
 
-    if (color == favColor) {
+
+    var color = prompt('Can you guess that is Black is my favorite?:P').toLocaleLowerCase();
+
+    if (color === 'yes') {
         alert('correct! black is my favorite color!');
+        score++
     } else {
-        alert('Oops! no ' + color + ' is not my favorite its Black');
+        alert('Oops! wrong answre');
     }
-}
 
-function questionTwo() {
+
     var know = prompt("would you like to get to know me ? (yes , no)").toLowerCase();
 
     if (know === 'yes') {
         alert('I am glad to know that :)');
-
+        score++
     } else {
         alert('As you like :(');
 
     }
 
-}
 
-function questionThree() {
+
+
     var whereStudy = prompt("would you like to know where did i studied ? (yes , no)").toLowerCase();
     if (whereStudy === 'yes') {
         alert('Lovely :)');
-
+        score++
     } else {
         alert(' Okay :(');
 
     }
-}
 
 
-function questionFour() {
+
+
     var whatGoals = prompt("would you like to know what is my goals? (yes , no)").toLowerCase();
     if (whatGoals === 'yes') {
         alert("Thats nice I will show you some of them")
-
+        score++
     }
     else {
         alert("Your lose anyway :(")
 
     }
-}
 
 
-function questionFive() {
+
+
     var studyYears = prompt("would you like to know how many years did my education last? (yes , no)".toLowerCase());
     if (studyYears === 'yes') {
         alert("Okay I will tell you")
+        score++
     }
     else {
         alert("Idont care too :(")
     }
-}
 
 
 
 
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
 
 
 var correctNumber = 14;
