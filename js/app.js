@@ -6,8 +6,20 @@ var sco =0
 var username = prompt('Welcome here , What is your name ');
 alert('Welcome her ' + username)
 
+function question(userInput,sucessMessage,wrongMessage){
+  if (userInput.toLowerCase() === 'yes' || userInput.toUpperCase() === 'yes' || userInput.toLowerCase() === 'y' || userInput.toUpperCase() === 'y') {
+    alert(sucessMessage);
+    sco++
+  } else {
+    alert(wrongMessage);
+    
+  
+  
+  }
+}
 
-function Age(myAge){
+
+/*function Age(myAge){
   if (myAge.toLowerCase() === 'yes' || myAge.toUpperCase() === 'yes' || myAge.toLowerCase() === 'y' || myAge.toUpperCase() === 'y') {
     alert('You are over 18 years old ');
     sco++
@@ -15,72 +27,80 @@ function Age(myAge){
     alert('You are under 18 years old ');
   }
 
-}  
+}  */
 
 var Uage = prompt('Are you over 18 years old ');
-Age(Uage);
+question(Uage,'You are over 18 years old ','You are under 18 years old ')
 
 
 // console.log(Uage);
 
 
-var Uscholl = prompt('Are you studing in shcool?');
 
-if (Uscholl.toLowerCase() === 'yes' || Uscholl.toUpperCase() === 'yes' || Uscholl.toLowerCase() === 'y' || Uscholl.toUpperCase() === 'y') {
-  alert('You are in school');
+//if (myschool.toLowerCase() === 'yes' || myschool.toUpperCase() === 'yes' || myschool.toLowerCase() === 'y' || myschool.toUpperCase() === 'y') {
+  //alert('You are in school');
 
-} else {
-  alert('You are not in  school');
-  sco++
+//} else {
+//  alert('You are not in  school');
+///  sco++
 
 
-}
+//}
+
+var Uschool = prompt('Are you studing in shcool?');
+question(Uschool,'You are in school','You are not in  school')
+
 
 // console.log(Uscholl);
+/*function myuni(Uuni){
+  if (Uuni.toLowerCase() === 'yes' || Uuni.toUpperCase() === 'yes' || Uuni.toLowerCase() === 'y' || Uuni.toUpperCase() === 'y') {
+    alert('You are in University');
+  } else {
+    alert('You are not in  Unviersity');
+    sco++
+  
+  
+  }
+}*/
 
+var youruni = prompt('Are you in University ? ');
+question(youruni,'You are in University','You are not in  Unviersity')
 
-var Uuni = prompt('Are you in University ? ');
-
-if (Uscholl.toLowerCase() === 'yes' || Uscholl.toUpperCase() === 'yes' || Uscholl.toLowerCase() === 'y' || Uscholl.toUpperCase() === 'y') {
-  alert('You are in University');
-} else {
-  alert('You are not in  Unviersity');
-  sco++
-
-
-}
 
 //console.log(Uuni);
+/*function loveanimals(animals){
+  if (animals.toLowerCase() === 'yes' || animals.toUpperCase() === 'yes' || animals.toLowerCase() === 'y' || animals.toUpperCase() === 'y') {
+    alert('Wow , you love dogs ');
+  } else {
+    sco++
+  
+    alert('Ohh , you arent love dogs ');
+  
+  }
+  
+}*/
 
+var doyoulove = prompt('Do you love dog?');
+question(doyoulove,'Wow , you love dogs ','Ohh , you arent love dogs ')
 
-var animals = prompt('Do you love dog?');
-
-if (animals.toLowerCase() === 'yes' || animals.toUpperCase() === 'yes' || animals.toLowerCase() === 'y' || animals.toUpperCase() === 'y') {
-  alert('Wow , you love dogs ');
-} else {
-  sco++
-
-  alert('Ohh , you arent love dogs ');
-
-}
 
 // console.log(animals);
 
 
-var cats = prompt('Do you love cats ?');
 
-if (cats.toLowerCase() === 'yes' || cats.toUpperCase() === 'yes' || cats.toLowerCase() === 'y' || cats.toUpperCase() === 'y') {
+
+/*if (cats.toLowerCase() === 'yes' || cats.toUpperCase() === 'yes' || cats.toLowerCase() === 'y' || cats.toUpperCase() === 'y') {
   alert('Wow , you love cats ');
   sco++
 
 } else {
   alert('Ohh , you arent love cats');
 
-}
+}*/
 
 //console.log(cats);
-
-
+var cats = prompt('Do you love cats ?');
+question(cats,'Wow , you love cats ','Ohh , you arent love cats')
 // Lab03 
 
 
