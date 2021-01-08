@@ -1,5 +1,39 @@
 h1 {
-    color:red ;
-    background-color:black ;
+    color:black ;
+    background-color:gray ;
 }
+
+
  
+p {
+    background-color: chocolate;
+    color: blue;
+    font-size: 200%;
+
+
+}
+
+img {
+    position: relative;
+    top:30px;
+    left:30px;
+    height: 200px;
+    weight; 200px;
+    padding:20px
+}
+
+ul {
+   
+    border: medium solid black;
+    padding: 25px;
+    margin: 20px;
+    list-style-type: circle;
+  }
+
+  ol {
+      border:20px;
+      border: medium solid black;
+      padding: 50px;
+      list-style-type: upper-roman	;
+
+  }
