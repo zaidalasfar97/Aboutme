@@ -18,7 +18,7 @@ img {
     top:30px;
     left:30px;
     height: 200px;
-    weight; 200px;
+    width:200px;
     padding:20px
 }
 
@@ -37,3 +37,4 @@ ul {
       list-style-type: upper-roman	;
 
   }
+
