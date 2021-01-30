@@ -7,6 +7,11 @@ var username = prompt('Welcome here , What is your name ');
 alert('Welcome her ' + username)
 
 function question(userInput,sucessMessage,wrongMessage){
+
+  while (userInput === '' || userInput === null || userInput === undefined) {
+    userInput = prompt('Please answer')
+
+  }
   if (userInput.toLowerCase() === 'yes' || userInput.toUpperCase() === 'yes' || userInput.toLowerCase() === 'y' || userInput.toUpperCase() === 'y') {
     alert(sucessMessage);
     sco++
